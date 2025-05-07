@@ -775,3 +775,30 @@
 2025-05-08 02:47:30 info: ::1 - - [07/May/2025:21:17:30 +0000] "POST /api/admin/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
 2025-05-08 02:48:10 info: ::1 - - [07/May/2025:21:18:10 +0000] "POST /api/admin HTTP/1.1" 201 160 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
 2025-05-08 02:48:25 info: ::1 - - [07/May/2025:21:18:25 +0000] "GET /api/admin HTTP/1.1" 200 377 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 03:32:45 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 03:32:45 info: Server running on port 3000
+2025-05-08 03:32:45 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:32:45 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 03:41:54 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 03:41:54 info: Server running on port 3000
+2025-05-08 03:41:54 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:41:54 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 03:43:54 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 03:43:54 info: Server running on port 3000
+2025-05-08 03:43:54 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:43:54 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 03:44:12 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 03:44:12 info: Server running on port 3000
+2025-05-08 03:44:12 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:44:12 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 03:45:03 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 03:45:03 info: Server running on port 3000
+2025-05-08 03:45:04 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:45:04 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 03:45:08 info: ::1 - - [07/May/2025:22:15:08 +0000] "GET /api/docs/user/ HTTP/1.1" 404 120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 03:45:08 info: ::1 - - [07/May/2025:22:15:08 +0000] "GET /favicon.ico HTTP/1.1" 404 120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 03:45:11 info: ::1 - - [07/May/2025:22:15:11 +0000] "GET /api/docs/user/ HTTP/1.1" 404 120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 03:49:16 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 03:49:16 info: Server running on port 3000
+2025-05-08 03:49:16 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 03:49:16 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
