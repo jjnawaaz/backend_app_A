@@ -4,3 +4,7 @@ node_modules
 
 #env file
 .env
+
+
+#dist 
+dist
