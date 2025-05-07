@@ -144,3 +144,15 @@ Error: ENOENT: no such file or directory, open '/Users/junaidnawaz/Documents/Cod
     at Object..js (node:internal/modules/cjs/loader:1895:10)
     at Module.load (node:internal/modules/cjs/loader:1465:32)
     at Function._load (node:internal/modules/cjs/loader:1282:12)
+2025-05-08 03:21:14 error: uncaughtException: ENOENT: no such file or directory, open '/Users/junaidnawaz/Documents/Coding/backend_app_A/dist/docs/user-swagger.yaml'
+Error: ENOENT: no such file or directory, open '/Users/junaidnawaz/Documents/Coding/backend_app_A/dist/docs/user-swagger.yaml'
+    at Object.openSync (node:fs:562:18)
+    at Object.readFileSync (node:fs:446:35)
+    at Utils.getStringFromFile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/yamljs/lib/Utils.js:284:19)
+    at Yaml.parseFile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/yamljs/lib/Yaml.js:46:21)
+    at Yaml.load (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/yamljs/lib/Yaml.js:78:17)
+    at Object.<anonymous> (/Users/junaidnawaz/Documents/Coding/backend_app_A/dist/app.js:40:42)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
