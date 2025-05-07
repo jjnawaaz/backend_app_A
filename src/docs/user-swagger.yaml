@@ -1,0 +1,419 @@
+openapi: 3.0.0
+info:
+  title: User and Group Management API
+  version: 1.0.0
+  description: |
+    ### Complete API Documentation
+    - User registration, authentication, and management
+    - Group creation and management
+    - All group endpoints require JWT authentication
+
+servers:
+  - url: http://localhost:3000/api
+    description: Local development server
+
+paths:
+  # Authentication Endpoints (no auth required)
+  /users/signup:
+    post:
+      tags: [Authentication]
+      summary: Register a new user
+      description: Creates a new user account with email verification
+      operationId: signup
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserSignup"
+      responses:
+        "201":
+          description: User created - verification email sent
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+        "400":
+          description: Invalid input or email exists
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /users/login:
+    post:
+      tags: [Authentication]
+      summary: User login
+      description: Authenticate user and return JWT token
+      operationId: login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: user@example.com
+                password:
+                  type: string
+                  format: password
+                  example: securePassword123
+      responses:
+        "200":
+          description: Successful login
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  token:
+                    type: string
+                    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+                  user:
+                    $ref: "#/components/schemas/UserResponse"
+        "401":
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          description: Email not verified
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /users/verify-email/{token}:
+    get:
+      tags: [Authentication]
+      summary: Verify email
+      description: Verify user's email using the token from verification email
+      operationId: verifyEmail
+      parameters:
+        - name: token
+          in: path
+          description: Verification token sent to user's email
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Email verified successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+        "400":
+          description: Invalid or expired token
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # Group Endpoints (all require JWT auth)
+  /users/groups:
+    post:
+      tags: [Groups]
+      summary: Create a new group
+      description: Create a new group/room (user becomes owner and first member)
+      operationId: createGroup
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateGroupRequest"
+      responses:
+        "201":
+          description: Group created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GroupResponse"
+        "400":
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: Unauthorized (missing or invalid token)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /users/groups/{groupId}/join:
+    post:
+      tags: [Groups]
+      summary: Join an existing group
+      description: Add current user to a group's members
+      operationId: joinGroup
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: groupId
+          in: path
+          description: ID of the group to join
+          required: true
+          schema:
+            type: string
+            format: objectid
+            pattern: "^[0-9a-fA-F]{24}$"
+      responses:
+        "200":
+          description: Successfully joined group
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+        "400":
+          description: Already a member or invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: Unauthorized (missing or invalid token)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          description: Group not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /users/groups/{groupId}/leave:
+    post:
+      tags: [Groups]
+      summary: Leave a group
+      description: Remove current user from a group's members
+      operationId: leaveGroup
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: groupId
+          in: path
+          description: ID of the group to leave
+          required: true
+          schema:
+            type: string
+            format: objectid
+            pattern: "^[0-9a-fA-F]{24}$"
+      responses:
+        "200":
+          description: Successfully left the group
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+        "400":
+          description: Not a member of this group
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: Unauthorized (missing or invalid token)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          description: Group not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+components:
+  schemas:
+    # User Schemas
+    UserSignup:
+      type: object
+      required:
+        - firstName
+        - lastName
+        - email
+        - country
+        - password
+      properties:
+        firstName:
+          type: string
+          minLength: 1
+          maxLength: 50
+          example: John
+        lastName:
+          type: string
+          minLength: 1
+          maxLength: 50
+          example: Doe
+        email:
+          type: string
+          format: email
+          maxLength: 255
+          example: user@example.com
+        country:
+          type: string
+          minLength: 2
+          maxLength: 100
+          example: United States
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 100
+          example: securePassword123
+          writeOnly: true
+
+    #User Response
+    UserResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: objectid
+          example: 507f1f77bcf86cd799439011
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: Doe
+        email:
+          type: string
+          format: email
+          example: user@example.com
+
+    # Group Schemas
+    CreateGroupRequest:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          minLength: 3
+          maxLength: 50
+          example: Developers Group
+        description:
+          type: string
+          maxLength: 200
+          nullable: true
+          example: A group for developer collaboration
+
+    GroupResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          format: objectid
+          example: 507f1f77bcf86cd799439011
+        name:
+          type: string
+          example: Developers Group
+        description:
+          type: string
+          nullable: true
+          example: A group for developer collaboration
+        createdBy:
+          type: string
+          format: objectid
+          example: 507f1f77bcf86cd799439012
+        members:
+          type: array
+          items:
+            type: string
+            format: objectid
+          example: ["507f1f77bcf86cd799439012"]
+        createdAt:
+          type: string
+          format: date-time
+          example: "2023-10-15T12:00:00Z"
+        updatedAt:
+          type: string
+          format: date-time
+          example: "2023-10-15T12:00:00Z"
+
+    # Common Response Schemas
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+          example: Operation completed successfully
+
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          example: Error description
+        error:
+          type: string
+          nullable: true
+          example: Detailed error message (optional)
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT token obtained during authentication

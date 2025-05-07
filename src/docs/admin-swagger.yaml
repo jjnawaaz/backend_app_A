@@ -1,0 +1,166 @@
+openapi: 3.0.0
+info:
+  title: Admin API
+  version: 1.0.0
+  description: |
+    ### Admin Management System
+    - Admins cannot sign up directly (must be created by other admins)
+    - Default admin is added via seeder
+    - Requires JWT authentication
+    - Superadmin privileges required for admin creation
+
+servers:
+  - url: http://localhost:3000/api
+    description: Local development server
+
+paths:
+  /admin/login:
+    post:
+      tags:
+        - Authentication
+      summary: Admin login
+      description: Authenticate admin and receive JWT token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AdminLogin"
+      responses:
+        "200":
+          description: Successful authentication
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthToken"
+        "401":
+          description: Invalid credentials
+        "500":
+          description: Server error
+
+  /admin:
+    post:
+      tags:
+        - Admin Management
+      summary: Create new admin (superadmin only)
+      description: Create a new admin account (requires superadmin privileges)
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateAdmin"
+      responses:
+        "201":
+          description: Admin created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminResponse"
+        "400":
+          description: Admin already exists
+        "401":
+          description: Unauthorized
+        "403":
+          description: Forbidden (insufficient privileges)
+        "500":
+          description: Server error
+
+    get:
+      tags:
+        - Admin Management
+      summary: List all admins (admin only)
+      description: Retrieve list of all admin accounts
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of admins
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AdminResponse"
+        "401":
+          description: Unauthorized
+        "500":
+          description: Server error
+
+components:
+  schemas:
+    AdminLogin:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: admin@example.com
+        password:
+          type: string
+          format: password
+          example: admin123
+
+    CreateAdmin:
+      type: object
+      required:
+        - name
+        - email
+        - password
+      properties:
+        name:
+          type: string
+          example: Admin User
+        email:
+          type: string
+          format: email
+          example: newadmin@example.com
+        password:
+          type: string
+          format: password
+          minLength: 8
+          example: securepassword123
+        role:
+          type: string
+          enum: [admin, superadmin]
+          default: admin
+          example: admin
+
+    AdminResponse:
+      type: object
+      properties:
+        _id:
+          type: string
+          example: 507f1f77bcf86cd799439011
+        name:
+          type: string
+          example: Admin User
+        email:
+          type: string
+          example: admin@example.com
+        role:
+          type: string
+          example: admin
+        createdAt:
+          type: string
+          format: date-time
+          example: 2023-05-01T12:00:00Z
+
+    AuthToken:
+      type: object
+      properties:
+        token:
+          type: string
+          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Enter JWT token in format `Bearer <token>`

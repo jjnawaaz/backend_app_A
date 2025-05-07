@@ -1,0 +1,777 @@
+2025-05-08 00:00:49 error: Database connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-05-08 00:01:43 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 00:01:43 info: Server running on port 3000
+2025-05-08 00:01:43 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:01:43 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user HTTP/1.1" 301 163 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 7738 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 200 154986 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 200 229223 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 200 1468326 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:01:56 info: ::1 - - [07/May/2025:18:31:56 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin HTTP/1.1" 301 164 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 200 7738 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 200 154986 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 200 229223 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 200 1468326 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:02:01 info: ::1 - - [07/May/2025:18:32:01 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:03:03 info: ::1 - - [07/May/2025:18:33:03 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:43 info: ::1 - - [07/May/2025:18:34:43 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:04:48 info: ::1 - - [07/May/2025:18:34:48 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:05:09 info: ::1 - - [07/May/2025:18:35:09 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:05:25 info: ::1 - - [07/May/2025:18:35:25 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:05:30 info: ::1 - - [07/May/2025:18:35:30 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:05:31 info: ::1 - - [07/May/2025:18:35:31 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:06:04 info: ::1 - - [07/May/2025:18:36:04 +0000] "POST /api/admin HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:06:07 info: ::1 - - [07/May/2025:18:36:07 +0000] "POST /api/admin HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:12:45 info: ::1 - - [07/May/2025:18:42:45 +0000] "POST /api/admin HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:13:02 info: ::1 - - [07/May/2025:18:43:02 +0000] "POST /api/admin HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user HTTP/1.1" 301 163 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:14:44 info: ::1 - - [07/May/2025:18:44:44 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:02 info: ::1 - - [07/May/2025:18:45:02 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:02 info: ::1 - - [07/May/2025:18:45:02 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:02 info: ::1 - - [07/May/2025:18:45:02 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:02 info: ::1 - - [07/May/2025:18:45:02 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:02 info: ::1 - - [07/May/2025:18:45:02 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:55 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:15:55 info: Server running on port 3000
+2025-05-08 00:15:55 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:15:55 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:15:58 info: ::1 - - [07/May/2025:18:45:58 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:58 info: ::1 - - [07/May/2025:18:45:58 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:58 info: ::1 - - [07/May/2025:18:45:58 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:58 info: ::1 - - [07/May/2025:18:45:58 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:15:58 info: ::1 - - [07/May/2025:18:45:58 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:03 info: ::1 - - [07/May/2025:18:46:03 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:03 info: ::1 - - [07/May/2025:18:46:03 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:03 info: ::1 - - [07/May/2025:18:46:03 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:03 info: ::1 - - [07/May/2025:18:46:03 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:03 info: ::1 - - [07/May/2025:18:46:03 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:05 info: ::1 - - [07/May/2025:18:46:05 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:06 info: ::1 - - [07/May/2025:18:46:06 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:30 info: ::1 - - [07/May/2025:18:46:30 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:45 info: ::1 - - [07/May/2025:18:46:45 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:45 info: ::1 - - [07/May/2025:18:46:45 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:45 info: ::1 - - [07/May/2025:18:46:45 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:45 info: ::1 - - [07/May/2025:18:46:45 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:16:45 info: ::1 - - [07/May/2025:18:46:45 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:27 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 00:20:27 info: Server running on port 3000
+2025-05-08 00:20:27 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:20:27 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 2932 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:20:31 info: ::1 - - [07/May/2025:18:50:31 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:21:00 info: ::1 - - [07/May/2025:18:51:00 +0000] "POST /api/users/signup HTTP/1.1" 400 68 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:21:14 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:21:14 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:21:14 info: ::1 - - [07/May/2025:18:51:14 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:22:18 info: ::1 - - [07/May/2025:18:52:18 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:22:56 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:22:56 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:22:56 info: ::1 - - [07/May/2025:18:52:56 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:23:22 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:23:22 info: Server running on port 3000
+2025-05-08 00:23:22 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:23:22 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:23:27 info: ::1 - - [07/May/2025:18:53:27 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:23:47 info: ::1 - - [07/May/2025:18:53:47 +0000] "POST /api/users/signup HTTP/1.1" 201 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:24:02 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:24:02 info: Server running on port 3000
+2025-05-08 00:24:02 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:24:02 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:27:23 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:27:23 info: Server running on port 3000
+2025-05-08 00:27:23 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:27:23 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:28 info: ::1 - - [07/May/2025:18:57:28 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:37 info: ::1 - - [07/May/2025:18:57:37 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:38 info: ::1 - - [07/May/2025:18:57:38 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:50 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:27:50 info: Server running on port 3000
+2025-05-08 00:27:50 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:27:50 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:27:52 info: ::1 - - [07/May/2025:18:57:52 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:52 info: ::1 - - [07/May/2025:18:57:52 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:52 info: ::1 - - [07/May/2025:18:57:52 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:52 info: ::1 - - [07/May/2025:18:57:52 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:52 info: ::1 - - [07/May/2025:18:57:52 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:27:55 info: ::1 - - [07/May/2025:18:57:55 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:31:51 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 00:31:51 info: Server running on port 3000
+2025-05-08 00:31:51 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:31:51 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:31:53 info: ::1 - - [07/May/2025:19:01:53 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:31:53 info: ::1 - - [07/May/2025:19:01:53 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:31:53 info: ::1 - - [07/May/2025:19:01:53 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:31:53 info: ::1 - - [07/May/2025:19:01:53 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:31:53 info: ::1 - - [07/May/2025:19:01:53 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 4979 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:33:00 info: ::1 - - [07/May/2025:19:03:00 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:30 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:35:30 info: Server running on port 3000
+2025-05-08 00:35:30 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:35:30 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 7470 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:35:38 info: ::1 - - [07/May/2025:19:05:38 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:37 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:40:37 info: Server running on port 3000
+2025-05-08 00:40:37 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:40:37 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 3416 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:40 info: ::1 - - [07/May/2025:19:10:40 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:42 info: ::1 - - [07/May/2025:19:10:42 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:40:45 info: ::1 - - [07/May/2025:19:10:45 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:48:17 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 00:48:17 info: Server running on port 3000
+2025-05-08 00:48:17 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:48:17 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 1445 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/[object%20Object] HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:13 info: ::1 - - [07/May/2025:19:20:13 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/[object%20Object] HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:14 info: ::1 - - [07/May/2025:19:20:14 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:50:21 info: Server running on port 3000
+2025-05-08 00:50:21 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:50:21 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 15631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:21 info: ::1 - - [07/May/2025:19:20:21 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:50:53 info: ::1 - - [07/May/2025:19:20:53 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:51:01 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:51:01 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:51:01 info: ::1 - - [07/May/2025:19:21:01 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:01 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:55:01 info: Server running on port 3000
+2025-05-08 00:55:01 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:55:01 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:55:08 info: ::1 - - [07/May/2025:19:25:08 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:56:01 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 00:56:01 info: Server running on port 3000
+2025-05-08 00:56:01 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:56:01 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:56:43 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:56:43 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:56:43 info: ::1 - - [07/May/2025:19:26:43 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:57:22 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:57:22 info: Server running on port 3000
+2025-05-08 00:57:22 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:57:22 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:57:46 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:57:46 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:57:46 info: ::1 - - [07/May/2025:19:27:46 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:57:57 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:57:57 info: Server running on port 3000
+2025-05-08 00:57:57 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:57:57 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:58:20 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:58:20 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:58:20 info: ::1 - - [07/May/2025:19:28:20 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:23 info: ::1 - - [07/May/2025:19:28:23 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:58:33 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:58:33 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 00:58:33 info: ::1 - - [07/May/2025:19:28:33 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:35 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 00:59:35 info: Server running on port 3000
+2025-05-08 00:59:35 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:59:35 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:59:51 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 00:59:51 info: Server running on port 3000
+2025-05-08 00:59:51 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 00:59:51 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 00:59:55 info: ::1 - - [07/May/2025:19:29:55 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:00:00 info: ::1 - - [07/May/2025:19:30:00 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:00:06 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:00:06 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:00:06 info: ::1 - - [07/May/2025:19:30:06 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:00 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:07:00 info: Server running on port 3000
+2025-05-08 01:07:00 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:07:00 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 15631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:06 info: ::1 - - [07/May/2025:19:37:06 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:07 info: ::1 - - [07/May/2025:19:37:07 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:07:19 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:07:19 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:07:19 info: ::1 - - [07/May/2025:19:37:19 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:08:28 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:08:28 info: Server running on port 3000
+2025-05-08 01:08:29 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:08:29 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:08:33 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:08:33 info: Server running on port 3000
+2025-05-08 01:08:33 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:08:33 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:08:53 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:08:53 info: Server running on port 3000
+2025-05-08 01:08:53 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:08:53 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:01 info: ::1 - - [07/May/2025:19:39:01 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:10 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:09:10 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:09:10 info: ::1 - - [07/May/2025:19:39:10 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:09:55 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:09:55 info: Server running on port 3000
+2025-05-08 01:09:55 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:09:55 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:10:02 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:10:02 info: Server running on port 3000
+2025-05-08 01:10:02 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:10:02 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:04 info: ::1 - - [07/May/2025:19:40:04 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:11 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:10:11 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:10:11 info: ::1 - - [07/May/2025:19:40:11 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:10:22 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:10:22 info: Server running on port 3000
+2025-05-08 01:10:22 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:10:22 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:18:03 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:18:03 info: Server running on port 3000
+2025-05-08 01:18:03 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:18:03 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:09 info: ::1 - - [07/May/2025:19:48:09 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:18:17 error: Error sending verification email: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:18:17 error: Signup error: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:18:17 info: ::1 - - [07/May/2025:19:48:17 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:24:16 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:24:16 info: Server running on port 3000
+2025-05-08 01:24:16 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:24:16 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:24:32 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:24:32 info: Server running on port 3000
+2025-05-08 01:24:32 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:24:32 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:30:02 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:30:02 info: Server running on port 3000
+2025-05-08 01:30:02 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:30:02 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:30:24 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:30:24 info: Server running on port 3000
+2025-05-08 01:30:24 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:30:24 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:30:28 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:30:28 info: Server running on port 3000
+2025-05-08 01:30:28 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:30:28 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:30 info: ::1 - - [07/May/2025:20:00:30 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:30:39 error: Error sending verification email: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:30:39 error: Signup error: connect ECONNREFUSED 127.0.0.1:587
+2025-05-08 01:30:39 info: ::1 - - [07/May/2025:20:00:39 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:31:07 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:31:07 info: Server running on port 3000
+2025-05-08 01:31:07 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:31:07 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:32:14 error: Error sending verification email: Mail command failed: 530 5.7.0 Must issue a STARTTLS command first
+2025-05-08 01:32:14 error: Signup error: Mail command failed: 530 5.7.0 Must issue a STARTTLS command first
+2025-05-08 01:32:14 info: ::1 - - [07/May/2025:20:02:14 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:41 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:33:41 info: Server running on port 3000
+2025-05-08 01:33:41 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:33:41 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:33:50 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:33:50 info: Server running on port 3000
+2025-05-08 01:33:50 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:33:50 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:33:53 info: ::1 - - [07/May/2025:20:03:53 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:34:02 error: Error sending verification email: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:34:02 error: Signup error: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:34:02 info: ::1 - - [07/May/2025:20:04:02 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:21 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:35:21 info: Server running on port 3000
+2025-05-08 01:35:21 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:35:21 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:27 info: ::1 - - [07/May/2025:20:05:27 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:28 info: ::1 - - [07/May/2025:20:05:28 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:35:38 error: Error sending verification email: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:35:38 error: Signup error: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:35:38 info: ::1 - - [07/May/2025:20:05:38 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:13 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:41:13 info: Server running on port 3000
+2025-05-08 01:41:13 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:41:13 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:15 info: ::1 - - [07/May/2025:20:11:15 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:20 info: ::1 - - [07/May/2025:20:11:20 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:27 info: ::1 - - [07/May/2025:20:11:27 +0000] "POST /api/users/signup HTTP/1.1" 400 34 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:41:34 error: Error sending verification email: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:41:34 error: Signup error: Error upgrading connection with STARTTLS: 454 4.7.0 TLS not available due to local problem
+2025-05-08 01:41:34 info: ::1 - - [07/May/2025:20:11:34 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:49:19 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:49:19 info: Server running on port 3000
+2025-05-08 01:49:19 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:49:19 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:54:18 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:54:18 info: Server running on port 3000
+2025-05-08 01:54:18 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:54:18 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:56:56 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 01:56:56 info: Server running on port 3000
+2025-05-08 01:56:56 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:56:56 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:57:02 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:57:02 info: Server running on port 3000
+2025-05-08 01:57:02 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:57:02 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:25 info: ::1 - - [07/May/2025:20:27:25 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:57:42 info: Verification email sent to user7@example.com
+2025-05-08 01:57:42 info: ::1 - - [07/May/2025:20:27:42 +0000] "POST /api/users/signup HTTP/1.1" 201 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:58:25 info: Verification email sent to lillyrose143143@gmail.com
+2025-05-08 01:58:25 info: ::1 - - [07/May/2025:20:28:25 +0000] "POST /api/users/signup HTTP/1.1" 201 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 01:59:43 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 01:59:43 info: Server running on port 3000
+2025-05-08 01:59:43 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:59:43 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 01:59:58 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 01:59:58 info: Server running on port 3000
+2025-05-08 01:59:58 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 01:59:58 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:00:55 info: ::1 - - [07/May/2025:20:30:55 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:01:28 error: Error sending verification email: Missing credentials for "PLAIN"
+2025-05-08 02:01:28 error: Signup error: Missing credentials for "PLAIN"
+2025-05-08 02:01:28 info: ::1 - - [07/May/2025:20:31:28 +0000] "POST /api/users/signup HTTP/1.1" 500 26 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:03:57 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:03:57 info: Server running on port 3000
+2025-05-08 02:03:57 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:03:57 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:05:10 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:05:10 info: Server running on port 3000
+2025-05-08 02:05:10 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:05:10 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:05:18 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:05:18 info: Server running on port 3000
+2025-05-08 02:05:18 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:05:18 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:05:39 info: Verification email sent to lillyrose143143@gmail.com
+2025-05-08 02:05:39 info: ::1 - - [07/May/2025:20:35:39 +0000] "POST /api/users/signup HTTP/1.1" 201 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:07:18 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:07:18 info: Server running on port 3000
+2025-05-08 02:07:18 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:07:18 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:07:23 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:07:23 info: Server running on port 3000
+2025-05-08 02:07:23 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:07:23 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:07:49 info: Verification email sent to lillyrose143143@gmail.com
+2025-05-08 02:07:49 info: ::1 - - [07/May/2025:20:37:49 +0000] "POST /api/users/signup HTTP/1.1" 201 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:11:32 info: ::1 - - [07/May/2025:20:41:32 +0000] "GET /api/users/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpbGx5cm9zZTE0MzE0M0BnbWFpbC5jb20iLCJpYXQiOjE3NDY2NTAyNjgsImV4cCI6MTc0NjczNjY2OH0.w5uBJUsRVr4SUZOAbowPfprqNOtkLqZVB1J_Zdyuq3U HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:11:32 info: ::1 - - [07/May/2025:20:41:32 +0000] "GET /favicon.ico HTTP/1.1" 404 120 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:12:45 info: ::1 - - [07/May/2025:20:42:45 +0000] "GET /api/users/verify-email/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxpbGx5cm9zZTE0MzE0M0BnbWFpbC5jb20iLCJpYXQiOjE3NDY2NTAyNjgsImV4cCI6MTc0NjczNjY2OH0.w5uBJUsRVr4SUZOAbowPfprqNOtkLqZVB1J_Zdyuq3U HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:13:06 info: ::1 - - [07/May/2025:20:43:06 +0000] "POST /api/users/groups HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:13:09 info: ::1 - - [07/May/2025:20:43:09 +0000] "POST /api/users/groups HTTP/1.1" 401 37 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:14 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:18:14 info: Server running on port 3000
+2025-05-08 02:18:14 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:18:14 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 15712 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:15 info: ::1 - - [07/May/2025:20:48:15 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:47 info: ::1 - - [07/May/2025:20:48:47 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:48 info: ::1 - - [07/May/2025:20:48:48 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:49 info: ::1 - - [07/May/2025:20:48:49 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:18:50 info: ::1 - - [07/May/2025:20:48:50 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:20:47 info: ::1 - - [07/May/2025:20:50:47 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:20:54 info: ::1 - - [07/May/2025:20:50:54 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:24:33 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:24:33 info: Server running on port 3000
+2025-05-08 02:24:33 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:24:33 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:25:28 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:25:28 info: Server running on port 3000
+2025-05-08 02:25:28 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:25:28 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 15712 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:31 info: ::1 - - [07/May/2025:20:57:31 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:33 info: ::1 - - [07/May/2025:20:57:33 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:34 info: ::1 - - [07/May/2025:20:57:34 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:37 info: ::1 - - [07/May/2025:20:57:37 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:38 info: ::1 - - [07/May/2025:20:57:38 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:27:46 info: Server running on port 3000
+2025-05-08 02:27:46 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:27:46 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 200 19083 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:27:46 info: ::1 - - [07/May/2025:20:57:46 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:28:26 info: ::1 - - [07/May/2025:20:58:26 +0000] "POST /api/users/login HTTP/1.1" 200 335 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:28:52 info: ::1 - - [07/May/2025:20:58:52 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:28:56 info: ::1 - - [07/May/2025:20:58:56 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:29:58 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:29:59 info: Server running on port 3000
+2025-05-08 02:29:59 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:29:59 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:30:00 info: ::1 - - [07/May/2025:21:00:00 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:30:03 info: ::1 - - [07/May/2025:21:00:03 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:30:03 info: ::1 - - [07/May/2025:21:00:03 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:30:15 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:30:15 info: Server running on port 3000
+2025-05-08 02:30:15 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:30:15 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:30:26 info: ::1 - - [07/May/2025:21:00:26 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:30:26 info: ::1 - - [07/May/2025:21:00:26 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:30:54 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:30:54 info: Server running on port 3000
+2025-05-08 02:30:54 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:30:54 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:30:56 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:30:56 info: Server running on port 3000
+2025-05-08 02:30:56 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:30:56 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:30:59 info: ::1 - - [07/May/2025:21:00:59 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:31:25 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:31:25 info: Server running on port 3000
+2025-05-08 02:31:25 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:31:25 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:31:30 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:31:30 info: Server running on port 3000
+2025-05-08 02:31:30 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:31:30 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:31:32 info: ::1 - - [07/May/2025:21:01:32 +0000] "POST /api/users/groups HTTP/1.1" 401 27 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:32:20 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:32:20 info: Server running on port 3000
+2025-05-08 02:32:20 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:32:20 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:34:20 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:34:20 info: Server running on port 3000
+2025-05-08 02:34:20 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:34:20 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:34:22 info: ::1 - - [07/May/2025:21:04:22 +0000] "POST /api/users/groups HTTP/1.1" 201 276 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:35:17 info: ::1 - - [07/May/2025:21:05:17 +0000] "POST /api/users/groups/507f1f77bcf86cd799439011/join HTTP/1.1" 404 29 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:35:22 info: ::1 - - [07/May/2025:21:05:22 +0000] "POST /api/users/groups/507f1f77bcf86cd799439011/join HTTP/1.1" 404 29 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:36:01 info: ::1 - - [07/May/2025:21:06:01 +0000] "POST /api/users/groups/507f1f77bcf86cd799439011/join HTTP/1.1" 404 29 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:36:24 info: ::1 - - [07/May/2025:21:06:24 +0000] "POST /api/users/groups/681bcad6a0a18b7f32086ae1/join HTTP/1.1" 400 30 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:36:40 info: ::1 - - [07/May/2025:21:06:40 +0000] "POST /api/users/groups/681bcad6a0a18b7f32086ae1/leave HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:37:17 info: ::1 - - [07/May/2025:21:07:17 +0000] "GET /api/docs/user/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin HTTP/1.1" 301 164 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:05 info: ::1 - - [07/May/2025:21:08:05 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 200 7758 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:38:15 info: ::1 - - [07/May/2025:21:08:15 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:42:18 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:42:18 info: Server running on port 3000
+2025-05-08 02:42:18 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:42:18 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:45 info: ::1 - - [07/May/2025:21:13:45 +0000] "GET /api/docs/admin/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:50 info: ::1 - - [07/May/2025:21:13:50 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:53 info: ::1 - - [07/May/2025:21:13:53 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:55 info: ::1 - - [07/May/2025:21:13:55 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:43:59 info: ::1 - - [07/May/2025:21:13:59 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:00 info: ::1 - - [07/May/2025:21:14:00 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:01 info: ::1 - - [07/May/2025:21:14:01 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:04 info: ::1 - - [07/May/2025:21:14:04 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:06 info: ::1 - - [07/May/2025:21:14:06 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:21 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:44:21 info: Server running on port 3000
+2025-05-08 02:44:21 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:44:21 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:44:25 info: ::1 - - [07/May/2025:21:14:25 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:44:27 info: ::1 - - [07/May/2025:21:14:27 +0000] "POST /api/admin/login HTTP/1.1" 401 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:45:02 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:45:02 info: Server running on port 3000
+2025-05-08 02:45:02 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:45:02 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:45:14 info: MongoDB Connected: ac-yhxuqir-shard-00-01.npws1vj.mongodb.net
+2025-05-08 02:45:14 info: Server running on port 3000
+2025-05-08 02:45:14 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:45:14 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:45:45 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:45:45 info: Server running on port 3000
+2025-05-08 02:45:45 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:45:45 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:46:45 info: ::1 - - [07/May/2025:21:16:45 +0000] "POST /api/admin HTTP/1.1" 201 164 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:47:12 info: MongoDB Connected: ac-yhxuqir-shard-00-00.npws1vj.mongodb.net
+2025-05-08 02:47:12 info: Server running on port 3000
+2025-05-08 02:47:12 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:47:12 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:47:20 info: MongoDB Connected: ac-yhxuqir-shard-00-02.npws1vj.mongodb.net
+2025-05-08 02:47:20 info: Server running on port 3000
+2025-05-08 02:47:20 info: User Swagger docs available at http://localhost:3000/api/docs/user
+2025-05-08 02:47:20 info: Admin Swagger docs available at http://localhost:3000/api/docs/admin
+2025-05-08 02:47:30 info: ::1 - - [07/May/2025:21:17:30 +0000] "POST /api/admin/login HTTP/1.1" 200 209 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:48:10 info: ::1 - - [07/May/2025:21:18:10 +0000] "POST /api/admin HTTP/1.1" 201 160 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2025-05-08 02:48:25 info: ::1 - - [07/May/2025:21:18:25 +0000] "GET /api/admin HTTP/1.1" 200 377 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"

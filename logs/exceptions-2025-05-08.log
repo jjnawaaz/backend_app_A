@@ -1,0 +1,98 @@
+2025-05-08 00:39:45 error: uncaughtException: Unable to parse.
+  No stack trace
+2025-05-08 02:31:13 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+[96msrc/middleware/auth.middleware.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m20[0m     const user = await User.findById(decoded.userId);
+[7m  [0m [91m                                             ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+[96msrc/middleware/auth.middleware.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m20[0m     const user = await User.findById(decoded.userId);
+[7m  [0m [91m                                             ~~~~~~[0m
+
+    at createTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-05-08 02:31:28 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'is' does not exist on type '{ id: string; }'.
+
+[7m20[0m     const user = await User.findById(decoded.is);
+[7m  [0m [91m                                             ~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m20[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'is' does not exist on type '{ id: string; }'.
+
+[7m20[0m     const user = await User.findById(decoded.is);
+[7m  [0m [91m                                             ~~[0m
+
+    at createTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-05-08 02:33:32 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+
+    at createTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-05-08 02:33:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/auth.middleware.ts[0m:[93m19[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'userId' does not exist on type '{ id: string; }'.
+
+[7m19[0m     console.log(decoded.userId)
+[7m  [0m [91m                        ~~~~~~[0m
+
+    at createTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/junaidnawaz/Documents/Coding/backend_app_A/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
